@@ -37,7 +37,7 @@ CaptchaPicture(
 ## 生成验证码及图片的方法
 
 ```
-Map<String, Object>  getImage()
+Map<String, Object>  getImageAndCode()
 通过此方法可以获取生成的验证码的值及生成的验证码图片的byte数组。
 ```
 
@@ -57,7 +57,7 @@ Map<String, Object>  getImage()
 @RequestMapping(value = "/img",method = RequestMethod.GET,produces = "image/jpg")
     public byte[] image(){
         CaptchaPicture captchaPicture = new CaptchaPicture(80,35,3,255,255,255,4);
-        Map<String, Object> image = captchaPicture.getImage();
+        Map<String, Object> image = captchaPicture.getImageAndCode();
         return (byte[])image.get("image");
 }
 ```

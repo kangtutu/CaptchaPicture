@@ -75,7 +75,7 @@ public class CaptchaPicture {
      * 获取生成的随机验证码图片
      * @return
      */
-    public Map<String,Object> getImage(){
+    public Map<String,Object> getImageAndCode(){
         Map<String,Object> map = new HashMap<>();
 
         //获取背景图片
