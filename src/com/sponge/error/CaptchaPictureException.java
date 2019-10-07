@@ -3,7 +3,7 @@ package com.sponge.error;
 /**
  * 异常处理类
  * @Description TODO
- * @Author kangmiaoyuan
+ * @Author kangtutu
  * @Site www.sponge-k.tech
  * @Company 海绵之家
  * @Create 2019-10-07 12:14

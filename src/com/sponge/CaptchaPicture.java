@@ -10,7 +10,7 @@ import java.util.*;
 /**
  * 生成验证码图片
  * @Description TODO
- * @Author kangmiaoyuan
+ * @Author kangtutu
  * @Site www.sponge-k.tech
  * @Company 海绵之家
  * @Create 2019-10-07 11:48
