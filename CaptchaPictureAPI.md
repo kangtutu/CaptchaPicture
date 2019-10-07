@@ -3,23 +3,23 @@
 1. 无参构造方法
 
 ```
-GenerateImage()
-初始化新创建的 GenerateImage 对象。
+CaptchaPicture()
+初始化新创建的 CaptchaPicture 对象。
 ```
 
 2. 有参构造方法
 
 ```
-GenerateImage(
+CaptchaPicture(
 	img_width,
 	img_height,
-	img_code_random_num,
+	verification_code_range,
 	color_red,
 	color_green,
 	color_blue,
-	img_code_length
+	verification_code_length
 )
-构建一个自定义参数的 GenerateImage 对象
+构建一个自定义参数的 CaptchaPicture 对象
 ```
 
 | 参数                     | 说明                                                         |
@@ -56,8 +56,8 @@ Map<String, Object>  getImage()
  */
 @RequestMapping(value = "/img",method = RequestMethod.GET,produces = "image/jpg")
     public byte[] image(){
-        CaptchaPicture generateImage = new CaptchaPicture(80,35,3,255,255,255,4);
-        Map<String, Object> image = generateImage.getImage();
+        CaptchaPicture captchaPicture = new CaptchaPicture(80,35,3,255,255,255,4);
+        Map<String, Object> image = captchaPicture.getImage();
         return (byte[])image.get("image");
 }
 ```
